@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+    <link rel="stylesheet" href="../views/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilos.css') }}">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="glass-container">
+            <nav class="navbar">
+                <div class="logo"><a href="#">Cafeteria</a></div>
+                <ul class="nav-links">
+                    <li><a href="#" title="Contactanos"><i class='bx bx-envelope'></i>Contactanos</a></li>
+                    <li><a href="{{url_for('quienes')}}" title="Quienes Somos"><i class='bx bx-user'></i>Quienes Somos</a></li>
+                    <li><a href="{{url_for('inicio')}}" title="InicioAdmin"><i class='bx bx-briefcase'></i>Inicio sesion Admin</a></li>
+                    
+                    <li><a href="#" onclick="window.close();" title="Salir"><i class='bx bx-exit'></i></a></li>
+                </ul>
+                
+            </nav>
+            <div class="content">
+                <div class="main">
+                    <h2>Hola!👌</h2><br><br><br>
+                    <p>
+                       Quieres ver nuestros MENU?<br>
+                    </p>
+                    <a class="menu-button" href="{{url_for('Seccion')}}">
+                        <i class='bx bx-coffee-togo'></i>Ver Menú
+                    </a>                    
+                </div>
+                <div class="image-wrapper">
+                    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

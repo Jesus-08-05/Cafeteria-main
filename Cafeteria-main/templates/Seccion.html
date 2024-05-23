@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria|Productos</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/seccion.css') }}">
+    <link rel="stylesheet" type="text/script" href="{{ url_for('static', filename='Script/seccion.js') }}">
+</head>
+<body>
+
+<i class='bx bx-filter filter-icon' id="filter-icon"></i>
+<i class='bx bx-cart cart-icon' id="cart-icon"></i>
+
+<section class="gallery">
+    <div class="content">
+        <img src="../static/img/Capuchino.jpg" alt="Producto 1">
+        <h6>Capuchino</h6>
+        <p>Capuchino Bien sabroso</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="content">
+        <img src="../static/img/Cafe.png" alt="Producto 2">
+        <h6>Cafe</h6>
+        <p>Rico Cafe Super Caliente</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+    <div class="content">
+        <img src="../static/img/Croisant.webp" alt="Producto 3">
+        <h6>Croisant</h6>
+        <p>Croisant Bien calientico</p>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
